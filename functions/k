@@ -1,0 +1,8 @@
+# vim:et sts=2 sw=2 ft=zsh
+if (( ! # )); then
+  print -u2 "usage: ${0} <alias> [args...]"
+  return 2
+fi
+_k_parse ${1} || return 2
+shift
+command ${_k_parsed} "${@}"

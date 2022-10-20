@@ -1,0 +1,6 @@
+#compdef k
+
+_k_parse ${words[2]} 2>/dev/null || return 2
+words[1,2]=(${_k_parsed})
+(( CURRENT += ${#_k_parsed} - 2 ))
+_kubectl
