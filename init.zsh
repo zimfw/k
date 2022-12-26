@@ -30,6 +30,7 @@ _k_parse() {
     k  kustomize
     l  logs
     t  top
+    v  version
     x  delete
   )
   local -rA kresources=(
