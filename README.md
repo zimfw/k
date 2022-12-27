@@ -28,6 +28,7 @@ keys. E.g `pvc` has precedence over `pv`.
 | k | kustomize |
 | l | logs |
 | t | top |
+| v | version |
 | x | delete |
 
 ### Resources
