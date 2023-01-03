@@ -25,6 +25,7 @@ keys. E.g `pvc` has precedence over `pv`.
 | d | describe |
 | e | edit |
 | g | get |
+| h | help |
 | k | kustomize |
 | l | logs |
 | t | top |
@@ -97,6 +98,7 @@ keys. E.g `pvc` has precedence over `pv`.
 | --- | ------ |
 | A  | --all-namespaces |
 | a  | --all |
+| h  | --help |
 | oj | -o=json |
 | on | -o=name |
 | ow | -o=wide |

@@ -27,6 +27,7 @@ _k_parse() {
     d  describe
     e  edit
     g  get
+    h  help
     k  kustomize
     l  logs
     t  top
@@ -95,6 +96,7 @@ _k_parse() {
   local -rA koptions=(
     A  --all-namespaces
     a  --all
+    h  --help
     oj -o=json
     on -o=name
     ow -o=wide
