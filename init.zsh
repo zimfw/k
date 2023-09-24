@@ -33,6 +33,7 @@ _k_parse() {
     t  top
     v  version
     x  delete
+    X  exec
   )
   local -rA kresources=(
     apis  apiservice
