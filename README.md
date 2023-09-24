@@ -31,6 +31,7 @@ keys. E.g `pvc` has precedence over `pv`.
 | t | top |
 | v | version |
 | x | delete |
+| X | exec |
 
 ### Resources
 | Key | Resource |
