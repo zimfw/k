@@ -26,6 +26,7 @@ _k_parse() {
     c  create
     d  describe
     e  edit
+    E  exec
     g  get
     h  help
     k  kustomize
