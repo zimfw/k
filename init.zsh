@@ -1,4 +1,11 @@
-# if (( ! ${+functions[_kubectl]} )) source <(command kubectl completion zsh)
+(( ! ${+functions[_kubectl]} )) && () {
+  local -r target=${1}
+  shift
+  local -r cmd=${commands[${1}]}
+  shift
+  if [[ ! ${target} -nt ${cmd} ]] ${cmd} "${@}" >! ${target}
+  source ${target}
+} ${0:h}/functions/_kubectl kubectl completion zsh
 
 # Positional parameters:
 # 1: name of input associative array
