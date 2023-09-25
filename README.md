@@ -24,6 +24,7 @@ keys. E.g `pvc` has precedence over `pv`.
 | c | create |
 | d | describe |
 | e | edit |
+| E | exec |
 | g | get |
 | h | help |
 | k | kustomize |
@@ -31,7 +32,6 @@ keys. E.g `pvc` has precedence over `pv`.
 | t | top |
 | v | version |
 | x | delete |
-| X | exec |
 
 ### Resources
 | Key | Resource |
