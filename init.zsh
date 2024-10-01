@@ -1,9 +1,9 @@
 () {
   local -r target=${1}
   shift
-  local -r cmd=${commands[${1}]}
-  shift
-  if [[ ! ${target} -nt ${cmd} ]] ${cmd} "${@}" >! ${target}
+  if [[ ! ( -s ${target} && ${target} -nt ${commands[${1}]} ) ]]; then
+    "${@}" >! ${target} || return 1
+  fi
   if (( ${+functions[compdef]} && ! ${+functions[${target:t}]} )) source ${target}
 } ${0:h}/functions/_kubectl kubectl completion zsh
 
